@@ -220,6 +220,7 @@ a {
 .team-img {
 }
 .team-container {
+  padding: 32px 16px;
 }
 .team-subtitle {
   font-weight: 500;
@@ -259,11 +260,19 @@ a {
 }
 .portfolio-img {
 }
+.portfolio-conteiner {
+  display: block;
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-text {
   font-size: 16px;
@@ -294,4 +303,6 @@ a {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
+  margin-top: 16px;
 }
