@@ -133,6 +133,7 @@ a {
   color: #434455;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-menu-link:hover,
@@ -182,6 +183,7 @@ a {
   border: none;
   display: block;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -301,6 +303,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link:hover,
@@ -332,8 +335,39 @@ a {
 }
 .portfolio-item {
   width: calc((100% - 3 * 24px) / 3);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  cursor: pointer;
+}
+
+.portfolio-item:hover .portfolio-cover-text {
+  transform: translateY(0);
+}
+.portfolio-cover-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 .portfolio-img {
+}
+.portfolio-cover-text {
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  padding: 40px 32px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
 }
 .portfolio-conteiner {
   display: block;
@@ -361,6 +395,16 @@ a {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
+.footer-container {
+  display: flex;
+  /* align-items: baseline; */
+}
+
+.footer-container-logo {
+  margin-right: 120px;
+}
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -380,4 +424,45 @@ a {
   color: #f4f4fd;
   max-width: 264px;
   margin-top: 16px;
+}
+
+.footer-soc-menu {
+  display: flex;
+  flex-direction: column;
+}
+.footer-soc-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer-soc-list {
+  display: flex;
+  gap: 16px;
+
+  /* justify-content: center;
+  align-items: center; */
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-item:hover,
+.footer-soc-item:focus {
+  background-color: #404bbf;
+}
+
+.footer-soc-link {
+}
+.footer-soc-icon {
+  fill: #f4f4fd;
 }
