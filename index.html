@@ -348,7 +348,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="portfolio-conteiner">
+              <div class="portfolio-container">
                 <h3 class="portfolio-subtitle">Banking App</h3>
                 <p class="portfolio-text">App</p>
               </div>
@@ -368,7 +368,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="portfolio-conteiner">
+              <div class="portfolio-container">
                 <h3 class="portfolio-subtitle">Cashless Payment</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -388,7 +388,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="portfolio-conteiner">
+              <div class="portfolio-container">
                 <h3 class="portfolio-subtitle">Meditation App</h3>
                 <p class="portfolio-text">App</p>
               </div>
@@ -408,7 +408,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="portfolio-conteiner">
+              <div class="portfolio-container">
                 <h3 class="portfolio-subtitle">Taxi Service</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -428,7 +428,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="portfolio-conteiner">
+              <div class="portfolio-container">
                 <h3 class="portfolio-subtitle">Screen Illustrations</h3>
                 <p class="portfolio-text">Design</p>
               </div>
@@ -448,7 +448,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="portfolio-conteiner">
+              <div class="portfolio-container">
                 <h3 class="portfolio-subtitle">Online Courses</h3>
                 <p class="portfolio-text">Marketing</p>
               </div>
@@ -524,7 +524,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal-view">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -585,16 +585,23 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <input
-            class="modal-privacy-check"
-            type="checkbox"
-            name="modal-privacy"
-            id="modal-privacy"
-          />
-          <label class="modal-privacy-text" for="modal-privacy"
-            ><span></span>I accept the terms and conditions of the Privacy
-            Policy</label
-          >
+          <div class="modal-field-privacy">
+            <input
+              class="modal-privacy-check visually-hidden"
+              type="checkbox"
+              name="modal-privacy"
+              id="modal-privacy"
+            />
+            <label class="modal-privacy-text" for="modal-privacy"
+              ><span
+                ><svg class="modal-privacy-icon" width="8" height="8">
+                  <use
+                    href="./images/symbol-defs.svg#icon-check"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="modal-privacy" href="">Privacy Policy</a></label
+            >
+          </div>
           <button class="modal-btn" type="submit">Send</button>
         </form>
       </div>
